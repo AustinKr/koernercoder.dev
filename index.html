@@ -1,11 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Duck Dev</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ducky Coder | Game & Software Projects</title>
+    <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 
+    <!-- Header & Navigation -->
+    <header>
+        <div class="nav-container">
+            <a href="#" class="logo">DUCKY CODER</a>
+
+            <nav>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#resume">Resume</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                </ul>
+            </nav>
+
+            <div class="menu-toggle" id="mobileMenu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Building Worlds & Software</h1>
+        <p>Game Developer & Software Engineer specializing in Unity, C++, and Interactive Experiences.</p>
+        <a href="#projects" class="cta-btn">View My Work</a>
+    </section>
+
+    <!-- Main Content: New Posts/Projects -->
+    <main class="section-container" id="projects">
+        <h2 class="section-title">Latest Projects & Posts</h2>
+
+        <div class="posts-grid">
+            <!-- Post Item 1 -->
+            <article class="post-card">
+                <div class="post-image">
+                    <!-- Replace with <img src="game1.jpg" alt="Game Screenshot"> -->
+                    <span>Project Screenshot</span>
+                </div>
+                <div class="post-content">
+                    <span class="post-date">August 1, 2026</span>
+                    <h3 class="post-title">Cyberpunk RPG Prototype</h3>
+                    <p class="post-excerpt">Exploring procedural generation in a neon-soaked cityscape using Unity DOTS.</p>
+                    <a href="#" class="read-more">Read Case Study</a>
+                </div>
+            </article>
+
+            <!-- Post Item 2 -->
+            <article class="post-card">
+                <div class="post-image">
+                    <span>Project Screenshot</span>
+                </div>
+                <div class="post-content">
+                    <span class="post-date">July 25, 2026</span>
+                    <h3 class="post-title">AI Pathfinding Visualizer</h3>
+                    <p class="post-excerpt">A web-based tool demonstrating A* and Dijkstra algorithms in real-time.</p>
+                    <a href="#" class="read-more">View Project</a>
+                </div>
+            </article>
+
+            <!-- Post Item 3 -->
+            <article class="post-card">
+                <div class="post-image">
+                    <span>Project Screenshot</span>
+                </div>
+                <div class="post-content">
+                    <span class="post-date">July 10, 2026</span>
+                    <h3 class="post-title">Indie Dev Log #4</h3>
+                    <p class="post-excerpt">Overcoming networking hurdles in multiplayer lobby systems using Photon.</p>
+                    <a href="#" class="read-more">Read Blog</a>
+                </div>
+            </article>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 DevPortfolio. All rights reserved.</p>
+    </footer>
+
+    <!-- Simple JavaScript for Mobile Menu -->
+    <script>
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.getElementById('navLinks');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 </html>
