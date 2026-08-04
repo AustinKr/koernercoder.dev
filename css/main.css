@@ -4,6 +4,7 @@
             --surface-color: #1e293b;
             --text-primary: #f8fafc;
             --text-secondary: #94a3b8;
+            --text-size: 24px;
             --accent-color: #38bdf8;
             --accent-hover: #0ea5e9;
             --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -210,6 +211,21 @@
             font-weight: 600;
             color: var(--text-primary);
             border-bottom: 1px solid var(--accent-color);
+        }
+
+        /* --- About --- */
+        .bio-container {
+            margin-top: var(--header-height);
+            margin-left: 30vw;
+            width: 40vw;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .bio-container p {
+            color: var(--text-primary);
+            font-size: var(--text-size);
         }
 
         /* --- Footer --- */
