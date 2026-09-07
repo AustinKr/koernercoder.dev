@@ -10,6 +10,7 @@
             --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             --container-width: 1200px;
             --header-height: 70px;
+            --default-padding: 20px;
         }
 
         * {
@@ -28,55 +29,39 @@
         a { text-decoration: none; color: inherit; transition: 0.3s; }
         ul { list-style: none; }
 
-        /* --- Header & Navigation --- */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
+        /* ---Top Section - Header & Navigation --- */
+        .top-section {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
             width: 100%;
             height: var(--header-height);
-            background-color: rgba(15, 23, 42, 0.95);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid #334155;
-            z-index: 1000;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            padding: var(--default-padding);
         }
-        .nav-extra {
-            margin-left: 2em;
-            font-style: italic;
-            color: var(--text-secondary);
+        header {
+            text-align: center;
         }
-        .nav-container {
-            width: 90%;
-            max-width: var(--container-width);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
+        .header-logo {
             font-size: 1.5rem;
             font-weight: 700;
             color: var(--accent-color);
             letter-spacing: 1px;
         }
 
+        /*
         .nav-links {
             display: flex;
             gap: 2rem;
         }
-
         .nav-links a {
             font-weight: 500;
             color: var(--text-secondary);
             font-size: 1rem;
         }
-
         .nav-links a:hover {
             color: var(--accent-color);
-        }
+        }*/
 
         /* Mobile Menu Toggle */
         .menu-toggle {
