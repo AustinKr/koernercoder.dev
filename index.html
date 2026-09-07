@@ -5,28 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Koerner Coder | Game & Software Projects</title>
     <link href="css/main.css" rel="stylesheet">
+    <script defer src="js/template-loader.js"></script>
 </head>
 <body>
-    <header>
-            <div class="nav-container">
-                <div>
-                    <a href="#" class="logo">KOERNER CODER</a>
-                    <span class="nav-extra">work in progress</span>
-                </div>
-                <nav>
-                    <ul class="nav-links" id="navLinks">
-                        <li><a href="pgs/about.html">About</a></li>
-                        <li><a href="pgs/projects.html">Projects</a></li>
-                    </ul>
-                </nav>
-
-                <div class="menu-toggle" id="mobileMenu">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                </div>
-            </div>
-    </header>
+    <div id="header-placeholder"></div>
+    <div id="nav-placeholder"></div>
 
     <!-- Hero Section -->
     <section class="hero">
@@ -82,13 +65,11 @@
             </article>
         </div>
     </main>
-    <footer>
-        <p>&copy; 2026 KoernerCoder. All rights reserved.</p>
-    </footer>
-
+    <div id="footer-placeholder"></div>
 
 
     <!-- Simple JavaScript for Mobile Menu -->
+    <!--
     <script>
         const mobileMenu = document.getElementById('mobileMenu');
         const navLinks = document.getElementById('navLinks');
@@ -103,6 +84,6 @@
                 navLinks.classList.remove('active');
             });
         });
-    </script>
+    </script>-->
 </body>
 </html>
