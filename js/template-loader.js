@@ -1,30 +1,34 @@
-const elementNames = ['header', 'nav', 'footer'];
-
-function replacePlaceholder(otherDoc, name) {
+function replacePlaceholderFrom(otherDoc, name, placeholder) {
+   console.log(placeholder);
   const template = otherDoc.getElementById(`${name}-template`);
-  const placeholder = document.getElementById(`${name}-placeholder`);
-
   const imported = document.importNode(template, true);
   placeholder.appendChild(imported.content);
 }
 
-function runWithDoc(path, onGet) {
-  fetch(path)
-    .then(response => {
+function replacePlaceholder(name, placeholder) {
+  fetch(`/templates/${name}.html`)
+    .then((response) => {
       if (!response.ok)
         throw new Error(`Response status: ${response.status}`);
-      return response.text()
+      return response.text();
     })
-    .then(html => {
+    .then((html) => {
       const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
-      onGet(doc);
+      const doc = parser.parseFromString(html, "text/html");
+      replacePlaceholderFrom(doc, name, placeholder);
     });
 }
 
-for (const id in elementNames) {
-  const name = elementNames[id];
-  runWithDoc(`/templates/${name}.html`, otherDoc => {
-    replacePlaceholder(otherDoc, name);
-  });
+// Load elements that are shown on every page
+const staticElementNames = ['header', 'nav', 'footer'];
+for (const name of staticElementNames) {
+  const placeholder = document.getElementById(`${name}-placeholder`);
+  replacePlaceholder(name, placeholder);
 }
+
+// Load posts
+const postsGrid = document.querySelector('.posts-grid');
+if (postsGrid !== null)
+  for (const placeholder of postsGrid.children) {
+    replacePlaceholder('post', placeholder)
+  }
