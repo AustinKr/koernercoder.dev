@@ -34,6 +34,6 @@ function loadPosts(json) {
 }
 
 if (postsGrid !== null)
-  loadFile(`/rsc/projects.json`)
+  loadFile(`https://austinkr.github.io/koernercoder.dev/rsc/projects.json`)
     .then(response => response.json())
     .then(json => loadPosts(json));
