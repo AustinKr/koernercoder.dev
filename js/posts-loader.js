@@ -28,6 +28,8 @@ function loadPosts(json) {
         child.children[1].children[1].textContent = info.title;
         child.children[1].children[0].textContent = info.date;
         child.children[1].children[2].textContent = info.description;
+        child.children[1].children[3].href = info.link;
+
        // child.children[1].children[1].textContent = info.iconName;
       }
     })

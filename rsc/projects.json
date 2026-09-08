@@ -3,21 +3,26 @@
     "title": "Running With Scissors",
     "date": "September 7, 2026",
     "description": "2D platformer game made with Unity3D.",
+    "link": "https://github.com/AustinKr/running-with-scissors-game",
+
     "iconName": "running-with-scissors.jpg"
   },
   {
     "title": "This is just a test",
     "date": "when i made it",
-    "description": "The one with stuff"
+    "description": "The one with stuff",
+    "link": "#"
   },
   {
     "title": "This is something else",
     "date": "Wumbuary 97, -3700",
-    "description": "The one where Ross says uh"
+    "description": "The one where Ross says uh",
+    "link": "#"
   },
   {
     "title": "?Como Estas?",
     "date": "January 1, 9000",
-    "description": "blah blah blah content and things"
+    "description": "blah blah blah content and things",
+    "link": "#"
   }
 ]
