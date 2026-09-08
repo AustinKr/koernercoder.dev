@@ -1,5 +1,4 @@
 function replacePlaceholderFrom(otherDoc, name, placeholder) {
-   console.log(placeholder);
   const template = otherDoc.getElementById(`${name}-template`);
   const imported = document.importNode(template, true);
   placeholder.appendChild(imported.content);
@@ -26,9 +25,9 @@ for (const name of staticElementNames) {
   replacePlaceholder(name, placeholder);
 }
 
-// Load posts
-const postsGrid = document.querySelector('.posts-grid');
-if (postsGrid !== null)
-  for (const placeholder of postsGrid.children) {
-    replacePlaceholder('post', placeholder)
-  }
+// // Load posts
+// const postsGrid = document.querySelector('.posts-grid');
+// if (postsGrid !== null)
+//   for (const placeholder of postsGrid.children) {
+//     replacePlaceholder('post', placeholder)
+//   }
