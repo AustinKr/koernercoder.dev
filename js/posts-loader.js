@@ -9,7 +9,7 @@ async function loadFile(path) {
 const postsGrid = document.querySelector('.posts-grid');
 
 function loadPosts(json) {
-  loadFile(`/templates/post.html`)
+  loadFile('https://austinkr.github.io/koernercoder.dev/templates/post.html')
     .then(response => response.text())
     .then(html => {
       // Load templates

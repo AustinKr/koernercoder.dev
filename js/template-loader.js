@@ -5,7 +5,7 @@ function replacePlaceholderFrom(otherDoc, name, placeholder) {
 }
 
 function replacePlaceholder(name, placeholder) {
-  fetch(`/templates/${name}.html`)
+  fetch(`https://austinkr.github.io/koernercoder.dev/templates/${name}.html`)
     .then((response) => {
       if (!response.ok)
         throw new Error(`Response status: ${response.status}`);
