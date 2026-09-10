@@ -206,7 +206,7 @@ header {
     max-width: var(--container-width);
     padding: var(--default-padding);
     margin: 3em auto;
-    background: linear-gradient(to top, var(--bg-color),var(--surface-color));
+    background: linear-gradient(to top right, var(--bg-color),var(--surface-color));
 }
 .bio-container {
     display: flex;
