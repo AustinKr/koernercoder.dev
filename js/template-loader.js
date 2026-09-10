@@ -1,3 +1,5 @@
+const PATH = "https://austinkr.github.io/koernercoder.dev";
+
 function replacePlaceholderFrom(otherDoc, name, placeholder) {
   const template = otherDoc.getElementById(`${name}-template`);
   const imported = document.importNode(template, true);
@@ -5,7 +7,7 @@ function replacePlaceholderFrom(otherDoc, name, placeholder) {
 }
 
 function replacePlaceholder(name, placeholder) {
-  fetch(`https://austinkr.github.io/koernercoder.dev/templates/${name}.html`)
+  fetch(`${PATH}/templates/${name}.html`)
     .then((response) => {
       if (!response.ok)
         throw new Error(`Response status: ${response.status}`);
