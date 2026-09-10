@@ -29,8 +29,8 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
     transition: 0.3s;
+    color: var(--text-secondary);
 }
 ul {
     list-style: none;
@@ -69,7 +69,6 @@ header {
     gap: 2rem;
 
     font-weight: 500;
-    color: var(--text-secondary);
 }
 
 /* Mobile Menu Toggle */
@@ -204,36 +203,38 @@ header {
 
 /* --- About --- */
 .bio-section {
-    margin-top: var(--header-height);
-    margin-left: 20vw;
-    width: 60vw;
-    padding: 20px;
-
-    border: 6px solid var(--accent-color);
-
-    color: var(--text-primary);
-    font-size: var(--text-size);
-
+    max-width: var(--container-width);
+    padding: var(--default-padding);
+    margin: 3em auto;
+    background: linear-gradient(to top, var(--bg-color),var(--surface-color));
+}
+.bio-container {
     display: flex;
     flex-wrap: wrap;
-    gap: 1em;
-}
-.bio-information {
-    flex: 1 0 40%;
-}
-.bio-links {
-    color: var(--text-secondary);
-}
-.bio-links a:hover {
-    color: var(--accent-hover);
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 2em;
 }
 .bio-photo {
-    flex: 1 0 40%;
+    border: 5px solid white;
+    width: 512px;
+    height: 512px;
+    flex: 0 0 auto;
+}
+
+.separate-top {
+    border-top: 5px solid var(--accent-color);
+    padding-top: 1em;
+    margin-top: 1em;
+}
+.separate-left {
+    border-left: 5px solid var(--accent-color);
+    padding-left: 1em;
 }
 .contact {
     font-size: 2em;
     text-align: center;
-    flex: 1 0 100%;
 }
 
 /* --- Footer --- */
