@@ -6,6 +6,7 @@
 	<title>Koerner Coder | About</title>
 	<link href="../css/main.css" rel="stylesheet">
 	<script defer src="../js/template-loader.js"></script>
+	<script defer src="../js/about.js"></script>
 </head>
 <body>
     <section class="top-section">
@@ -51,7 +52,14 @@
                 </ul>
             </div>
         </article>
-        <div class="contact separate-top">austin_koerner@outlook.com</div>
+        <div class="cta-btn separate-top" id="contact-button">austin_koerner@outlook.com</div>
+        <article id="contact-container" class="hidden">
+            <h1>Send email</h1>
+            <input id="contact-email" placeholder="myemail@example.com">
+            <input id="contact-message" placeholder="Enter a message">
+
+            <a id="contact-send" class="cta-btn" href="mailto:austin_koerner@outlook.com?subject=Hello&body=Test">Open mail</a>
+        </article>
     </section>
 
     <div id="footer-placeholder"></div>

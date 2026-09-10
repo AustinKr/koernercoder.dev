@@ -35,6 +35,9 @@ a {
 ul {
     list-style: none;
 }
+.hidden {
+    display: none;
+}
 
 /* --- psuedo classes --- */
 a:hover {
@@ -222,6 +225,22 @@ header {
     height: 512px;
     flex: 0 0 auto;
 }
+.contact-button {
+    font-size: clamp(1rem, 4vw, 2rem);
+    text-align: center;
+
+    background-color: none;
+
+    width: 75%;
+    margin: 0 auto;
+    padding: var(--default-padding);
+}
+input{
+    background-color: var(--surface-color);
+    color: white;
+    font-size: 1em;
+    padding: 0.5em;
+}
 
 .separate-top {
     border-top: 5px solid var(--accent-color);
@@ -231,10 +250,6 @@ header {
 .separate-left {
     border-left: 5px solid var(--accent-color);
     padding-left: 1em;
-}
-.contact {
-    font-size: 2em;
-    text-align: center;
 }
 
 /* --- Footer --- */
