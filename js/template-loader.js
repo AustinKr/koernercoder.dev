@@ -1,4 +1,4 @@
-const PATH = "";// "https://austinkr.github.io/koernercoder.dev";
+const PATH = "https://austinkr.github.io/koernercoder.dev";
 
 function replacePlaceholderFrom(otherDoc, name, placeholder) {
   const template = otherDoc.getElementById(`${name}-template`);
