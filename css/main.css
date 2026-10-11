@@ -68,11 +68,12 @@ header {
 /* nav */
 .nav-links {
     margin: calc(var(--header-height) / 2 - 1em / 2) 0;
+    font-weight: 500;
 
+@media screen and (orientation: landscape) {
     display: flex;
     gap: 2rem;
-
-    font-weight: 500;
+}
 }
 
 /* Mobile Menu Toggle */
