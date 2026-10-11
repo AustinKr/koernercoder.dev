@@ -57,9 +57,10 @@ a:hover {
 /* header */
 header {
     text-align: center;
+    font-size: clamp(0.5em, 3vw, 1em);
 }
 .header-logo {
-    font-size: 1.5em;
+    font-size: clamp(1em, 4vw, 1.5em);
     font-weight: 700;
     color: var(--accent-color);
     letter-spacing: 1px;
